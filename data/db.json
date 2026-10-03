@@ -1,0 +1,206 @@
+{
+  "shops": [
+    {
+      "id": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "vashompay",
+      "city": "casa",
+      "phone": "0778985579",
+      "email": "amin111@gmail.com",
+      "features": [
+        "حجز مسبق",
+        "عمال محترفون"
+      ],
+      "hash": "$2a$10$vcaPpnvnB4AhDmopRzU1Oe9Ou8O1nTTCly4ht4orQcBijStEd.snO",
+      "created": "2026-10-03T04:55:03.202Z",
+      "address": "hay salam 121",
+      "hours": "24/7",
+      "description": "خدمات سريعة مع الطلب"
+    },
+    {
+      "id": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "aosao",
+      "city": "casa",
+      "phone": "67676767676",
+      "email": "amin333@gmail.com",
+      "features": [
+        "حجز مسبق",
+        "عمال محترفون"
+      ],
+      "hash": "$2a$10$s5poil/HGiUnmUBUP7HJJuEWo7GnlMmgWeNI0MZo9ZcCOlUWvVguS",
+      "created": "2026-10-03T05:05:20.889Z"
+    },
+    {
+      "id": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "amin2222",
+      "city": "npm start",
+      "phone": "67676767676",
+      "email": "amin14711@gmail.com",
+      "features": [
+        "حجز مسبق",
+        "عمال محترفون"
+      ],
+      "hash": "$2a$10$.wK6jxtDvaOI6dEu3tEBrehFCaqz1d8ZjD3NTFvyB2.0LEcyAzWBu",
+      "created": "2026-10-03T05:12:55.705Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "47a9eb45-5233-400c-badc-bf1ec9df387d",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "غسيل خارجي",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 40
+    },
+    {
+      "id": "809e30cc-a4c3-4210-aa69-bbb9a58b2ae3",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "غسيل شامل",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 90
+    },
+    {
+      "id": "66677329-1af0-495b-9dfa-9ccdbd183d5b",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "تنظيف داخلي عميق",
+      "category": "تنظيف داخلي",
+      "vehicle": "سيارة",
+      "price": 220
+    },
+    {
+      "id": "c8ad3fc8-2583-4f1d-9373-6e4af37a8a19",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "تغيير الزيت",
+      "category": "تغيير الزيت",
+      "vehicle": "الكل",
+      "price": 150
+    },
+    {
+      "id": "3a9f092d-e445-432f-970c-c8ebfe0977b0",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "غسيل دراجة نارية",
+      "category": "غسيل",
+      "vehicle": "دراجة نارية",
+      "price": 30
+    },
+    {
+      "id": "a9ce2db0-75a7-418a-b18b-d699696c847b",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "غسيل خارجي",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 40
+    },
+    {
+      "id": "54aa4279-483a-4fd1-9f0f-c7db8780d315",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "غسيل شامل",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 90
+    },
+    {
+      "id": "af632b94-e8ad-4e42-b86d-b848ad5735e7",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "تنظيف داخلي عميق",
+      "category": "تنظيف داخلي",
+      "vehicle": "سيارة",
+      "price": 220
+    },
+    {
+      "id": "cfec9cdc-122c-4021-beb3-5cb8cb4c0d8c",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "تغيير الزيت",
+      "category": "تغيير الزيت",
+      "vehicle": "الكل",
+      "price": 150
+    },
+    {
+      "id": "0dcb348c-72c1-4143-ac16-ab6ca72e4ced",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "غسيل دراجة نارية",
+      "category": "غسيل",
+      "vehicle": "دراجة نارية",
+      "price": 30
+    },
+    {
+      "id": "a07f7653-1eb1-4eec-b766-cb09b7462d89",
+      "shopId": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "غسيل خارجي",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 40
+    },
+    {
+      "id": "ea09a29d-9b20-4785-8ff2-858e9c633f46",
+      "shopId": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "غسيل شامل",
+      "category": "غسيل",
+      "vehicle": "سيارة",
+      "price": 90
+    },
+    {
+      "id": "919c4fb3-8ab3-4c99-9bc0-bd1eda77450a",
+      "shopId": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "تنظيف داخلي عميق",
+      "category": "تنظيف داخلي",
+      "vehicle": "سيارة",
+      "price": 220
+    },
+    {
+      "id": "f5596e9a-5738-44b8-a937-542f4f46ebb5",
+      "shopId": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "تغيير الزيت",
+      "category": "تغيير الزيت",
+      "vehicle": "الكل",
+      "price": 150
+    },
+    {
+      "id": "f6855cff-6ad1-46ff-bc15-15346cc5f5e4",
+      "shopId": "9f358811-0215-40f0-8aaa-b5706e73ca66",
+      "name": "غسيل دراجة نارية",
+      "category": "غسيل",
+      "vehicle": "دراجة نارية",
+      "price": 30
+    }
+  ],
+  "customers": [
+    {
+      "id": "1ae613c4-aa14-4e39-aaa1-b971d23526d1",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "name": "مممبسبس",
+      "phone": "123123",
+      "vehicle": "دراجة نارية",
+      "plate": "",
+      "created": "2026-10-03T05:02:12.528Z"
+    },
+    {
+      "id": "9470bd9c-f267-4243-b7ce-4d1723713f9f",
+      "shopId": "da477c38-53c5-43a2-b4a8-721ea2204322",
+      "name": "مممبسبس",
+      "phone": "123123",
+      "vehicle": "سيارة",
+      "plate": "",
+      "created": "2026-10-03T05:09:31.112Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "ea42ed26-e23c-4c5e-b6a6-d437c32b68e6",
+      "shopId": "53376e83-6e2f-46d4-b918-4fe3ce6d39fe",
+      "deviceId": "murvdwa3cjph732941",
+      "customerName": "مممبسبس",
+      "phone": "123123",
+      "vehicle": "دراجة نارية",
+      "serviceName": "غسيل خارجي",
+      "price": 40,
+      "date": "2026-10-05",
+      "time": "14:00",
+      "notes": "",
+      "status": "done",
+      "source": "app",
+      "created": "2026-10-03T05:02:12.528Z"
+    }
+  ]
+}

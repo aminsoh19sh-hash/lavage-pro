@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>لافاش برو | ادارة محلات غسل وصيانة المركبات</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="nav"><a class="logo" href="#">لافاش<b>برو</b></a>
+<nav><a href="#how">كيف يعمل</a><a href="#faq">الأسئلة الشائعة</a><a href="#about">حول التطبيق</a></nav>
+<button class="btn ghost" data-auth="login">دخول صاحب المحل</button></header>
+
+<div class="hero"><div>
+<h1>ادِر محل غسيل السيارات والدراجات من شاشة واحدة.</h1>
+<p>مواعيد الزبائن، الخدمات وأسعارها، والايرادات بالدرهم، كلها في لوحة تحكم بسيطة. والزبون يحجز من هاتفه مباشرة.</p>
+<button class="btn" data-auth="reg">سجّل محلك مجانا</button>
+<a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.lavagepro.client" target="_blank" rel="noopener">حمّل تطبيق الزبون من Google Play</a>
+</div></div>
+
+<section id="how"><h2>كيف يعمل التطبيق؟</h2><div class="grid">
+<div class="card"><i>🏪</i><h3>سجّل محلك</h3><p>أنشئ حساب المحل باسمه ومدينته، فيظهر للزبائن في تطبيق الحجز.</p></div>
+<div class="card"><i>🧾</i><h3>أضف خدماتك</h3><p>غسيل، تنظيف، تلميع، تغيير الزيت أو ميكانيك. لكل خدمة سعرها ونوع المركبة (سيارة، دراجة نارية...).</p></div>
+<div class="card"><i>📅</i><h3>استقبل المواعيد</h3><p>يصلك حجز الزبون في لوحتك فقط. أكّده أو ألغِه أو عدّله بنقرة.</p></div>
+<div class="card"><i>💰</i><h3>تابع أرباحك</h3><p>بطاقات تعرض الايرادات وعدد المواعيد والزبائن وأنواع الخدمات.</p></div></div></section>
+
+<section id="faq" class="alt"><h2>الأسئلة الشائعة</h2>
+<details><summary>هل التطبيق مجاني؟</summary><p>نعم، تسجيل المحل واستعمال لوحة التحكم مجانيان في هذه النسخة.</p></details>
+<details><summary>هل أستطيع اضافة خدمات ميكانيكية أو تغيير الزيت؟</summary><p>نعم. تضيف أي خدمة بالاسم والصنف والسعر ونوع المركبة.</p></details>
+<details><summary>هل يرى الزبون محلا آخر غير محلي؟</summary><p>الزبون يرى قائمة المحلات المسجلة، لكن حجزه يصل فقط الى المحل الذي اختاره.</p></details>
+<details><summary>هل يحتاج الزبون الى ايميل؟</summary><p>لا. يكفي الاسم ورقم الهاتف، وتطبيقه مفتوح المصدر.</p></details>
+<details><summary>هل يمكنني اضافة زبون أو موعد بنفسي؟</summary><p>نعم، من لوحة التحكم تضيف زبونا أو موعدا لحجز بالهاتف أو في المحل.</p></details></section>
+
+<section id="about"><h2>حول التطبيق</h2><p style="max-width:700px;color:var(--mut)">لافاش برو منصة عربية لأصحاب محلات غسل وتنظيف وصيانة المركبات. هدفها استبدال الدفتر والواتساب بنظام منظم يحفظ المواعيد والزبائن والايرادات، ويمنح الزبون تجربة حجز سهلة.</p></section>
+
+<footer><div class="grid">
+<div><h4>لافاش برو</h4><p>منصة ادارة محلات غسل وصيانة المركبات.</p></div>
+<div><h4>روابط</h4><a href="#how">كيف يعمل</a><a href="#faq">الأسئلة الشائعة</a><a href="#about">حول التطبيق</a></div>
+<div><h4>للمحلات</h4><a href="#" data-auth="reg">تسجيل محل جديد</a><a href="#" data-auth="login">دخول صاحب المحل</a></div>
+<div><h4>للزبائن</h4><a href="https://play.google.com/store/apps/details?id=com.lavagepro.client" target="_blank" rel="noopener">تطبيق Google Play</a><p>الدار البيضاء، المغرب</p></div></div>
+<p class="cp">© لافاش برو · جميع الحقوق محفوظة</p></footer>
+
+<dialog id="dlg"><form id="af"><h3 id="dT"></h3>
+<label class="reg">اسم المحل<input id="sn"></label><label class="reg">المدينة<input id="sc"></label><label class="reg">الهاتف<input id="sp" type="tel"></label>
+<label>الايميل<input id="se" type="email" required></label><label>كلمة المرور<input id="pw" type="password" minlength="6" required></label>
+<p class="msg" id="msg"></p><button class="btn" id="go"></button><button type="button" class="link" id="sw"></button><button type="button" class="link" id="cl">إغلاق</button></form></dialog>
+<script src="app.js"></script></body></html>

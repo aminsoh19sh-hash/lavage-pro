@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ملف المحل | لافاش برو</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="nav"><a class="logo" href="index.html">لافاش<b>برو</b></a><a class="btn ghost sm" href="dashboard.html">← العودة للوحة التحكم</a></header>
+<main class="pf"><h1>ملف المحل</h1><p>هذه المعلومات تظهر للزبائن في تطبيق الحجز.</p>
+<form id="f">
+<label>اسم المحل<input name="name" required></label><label>المدينة<input name="city" required></label>
+<label>رقم الهاتف<input name="phone" type="tel"></label><label>الايميل (للدخول فقط)<input id="em" disabled></label>
+<label>العنوان<input name="address" placeholder="مثال: شارع الزرقطوني، الدار البيضاء"></label><label>أوقات العمل<input name="hours" placeholder="مثال: 09:00 - 19:00 كل يوم"></label>
+<label class="full">نبذة عن المحل<textarea name="description" rows="3" placeholder="اكتب جملة أو جملتين تعرّف الزبائن بمحلك"></textarea></label>
+<label class="full">مزايا المحل <small>(ميزة في كل سطر)</small><textarea name="features" rows="4" placeholder="حجز مسبق&#10;عمال محترفون&#10;موقف سيارات"></textarea></label>
+<div class="full"><button class="btn">💾 حفظ التعديلات</button></div></form>
+<div class="pv"><h3>كيف يراه الزبون:</h3><div class="card" id="pv"></div></div></main>
+<div class="toast" id="toast"></div>
+<script>
+if(!localStorage.tok)location='index.html';
+const $=s=>document.querySelector(s),f=$('#f');
+const api=async(m,b)=>{const r=await fetch('/api/me',{method:m,headers:{'Content-Type':'application/json',Authorization:'Bearer '+localStorage.tok},body:b&&JSON.stringify(b)});const d=await r.json();if(r.status===401){localStorage.removeItem('tok');location='index.html'}if(!r.ok)throw Error(d.error||'خطأ');return d};
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)};
+const feats=()=>f.features.value.split(/[\n,،]/).map(x=>x.trim()).filter(Boolean);
+function preview(){$('#pv').innerHTML=`<b>${f.name.value||'اسم المحل'}</b> <small style="color:var(--mut)">📍 ${f.city.value||'المدينة'}</small>${f.description.value?`<p>${f.description.value}</p>`:''}<p>${f.address.value?'📍 '+f.address.value+' ':''}${f.hours.value?'🕒 '+f.hours.value+' ':''}${f.phone.value?'📞 '+f.phone.value:''}</p><div>${feats().map(x=>`<span class="chip">✔ ${x}</span>`).join('')}</div>`}
+api('GET').then(s=>{['name','city','phone','address','hours','description'].forEach(k=>f[k].value=s[k]||'');f.features.value=(s.features||[]).join('\n');$('#em').value=s.email;preview()});
+f.oninput=preview;
+f.onsubmit=async e=>{e.preventDefault();try{await api('PUT',{name:f.name.value,city:f.city.value,phone:f.phone.value,address:f.address.value,hours:f.hours.value,description:f.description.value,features:feats()});toast('تم حفظ ملف المحل ✔')}catch(x){toast(x.message)}};
+</script></body></html>
